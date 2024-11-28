@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eatch a Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="content-header">
+        <h1>EATCH A SKETCH</h1>
+        <div class="deco">
+            <div class="item distinto"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+    </header>
+    <main class="main">
+        <div class="container-main">
+            <div class="content-main">
+                <div class="tools">
+                    <input type="color" name="pick-color" id="color">
+                    <label class="btn active pick-color" id="color-btn" for="color">Color mode</label>
+
+                    <div class="btn" id="rainbow">Rainbow mode</div>
+
+                    <div class="btn" id="erase">Erase</div>
+
+                    <div class="btn" id="clear">Clear</div>
+
+                </div>
+                <div class="container-draw">
+
+                    <div id="container-draw"></div>
+
+                </div>
+            </div>
+                <div class="footer-main">
+            
+                    <div class="footer-main-left">
+                        <p class="value-range">20x20</p>
+                        <input type="range" name="" id="range" min="2" max="60" value="20">
+                    </div>
+                
+                    <div class="footer-main-rigth">
+                        <div class="pixels" id="10">10x10</div>
+                        <div class="pixels activePixels" id="20">20x20</div>
+                        <div class="pixels" id="40">40x40</div>
+                        <div class="pixels" id="60">60x60</div>
+        
+                    </div>
+                </div>
+        </div>
+
+    </main>
+    <footer class="footer">Copyright © 2024 ReportThatCode</footer>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

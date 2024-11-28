@@ -1,0 +1,225 @@
+:root {
+    --mainColor--: #FCF4E7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+   height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FCF4E7;
+}
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 6px black solid;
+    padding: 1rem 4rem;
+    width: 100%;
+} 
+.header h1 {
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content-header {
+    max-width: 900px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.deco {
+    display: flex;
+    gap: 10px;
+}
+.item {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #FCF4E7;
+    border: solid 6px black;
+    box-shadow: 2px 2px 0px rgb(0, 0, 0);
+    
+}
+
+.distinto {
+    background-color:black;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    display: flex;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-main {
+    display: flex;
+}
+
+#container-draw {
+    border: solid 6px black;
+    height: 500px;
+    width: 500px;
+    margin-left: 60px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 0px black;
+    background-color:#f3f3f3;
+    display: grid;
+    grid-template-columns: repeat(10,2fr);
+    grid-template-rows: repeat(10,2fr);
+    
+}
+.pixel {
+    border: solid 1px rgb(231, 230, 230);
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.footer-main-rigth {
+    display: flex;
+    padding-top: 0.8rem;
+}
+
+
+/*TOOLS*/
+
+.tools {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#color {
+    
+    width: 150px;
+    height: 80px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    border: solid 4px black;
+    border-radius: 5px;
+    margin-top: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 3px 4px 0px black;
+    transition: all 0.1s ease;
+}
+
+.active {
+     box-shadow: 1px 1px 0px black;
+     border: solid black 3px;
+     
+}
+
+.footer-main {
+   padding: 2rem 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.pixels {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    border: solid 4px black;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 3px 4px 0px black;
+    margin-right: 10px;
+    transition: all 0.1s ease;
+}
+
+.activePixels {
+    box-shadow: 1px 1px 0px black;
+    border: solid black 3px;
+    margin-top: 3px;
+}
+
+#range {
+    margin-left: 10px;
+    width: 150px;
+    appearance: none;
+    background-color: black;
+    padding: 0.2rem;
+    border-radius: 4px;
+    font-size: 3rem;
+    background-color: var(--mainColor--);
+    border: solid 4px black;
+    box-shadow: 3px 3px 1px black;
+}
+.footer-main-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#range::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Elimina el estilo predeterminado */
+    width: 25px; /* Tamaño de la pelotita */
+    height: 25px; /* Tamaño de la pelotita */
+    background: black; /* Color de la pelotita */
+    border: 5px solid black; /* Borde blanco */
+    border-radius: 50%; /* Hace que sea completamente redonda */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    position: relative;
+}
+
+.value-range {
+    font-size: 1.3rem;
+    margin-left: 5px;
+    padding-bottom: 3px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
